@@ -8,7 +8,7 @@ import {Component} from 'angular2/core';
 })
 
 export class GuideComponent {
-  
+
   city: string;
 
   constructor() {

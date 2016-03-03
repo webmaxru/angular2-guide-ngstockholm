@@ -11,14 +11,10 @@ import { FeedbackComponent } from './feedback.component';
   selector: 'app',
   template: `
   <guide></guide>
-	<nav>
-	<a [routerLink]="['Places']">Best places</a>
-  |
-	<a [routerLink]="['Feedback']">Leave your feedback</a>
-  </nav>
-  <router-outlet></router-outlet>
+  <places></places>
+  <feedback></feedback>
 	`,
-  directives: [ROUTER_DIRECTIVES, GuideComponent],
+  directives: [ROUTER_DIRECTIVES, GuideComponent, PlacesComponent, FeedbackComponent],
   providers: [ROUTER_PROVIDERS, HTTP_PROVIDERS]
 })
 @RouteConfig([
