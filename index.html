@@ -1,7 +1,11 @@
 <html>
   <head>
-    <title>Angular 2 QuickStart</title>
+    <title>Angular 2 Guide</title>
+
+    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
 
     <script src="node_modules/es6-shim/es6-shim.min.js"></script>
     <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
@@ -11,6 +15,9 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
 
     <script>
       System.config({
@@ -27,6 +34,6 @@
   </head>
 
   <body>
-    <ng2-app>Loading...</ng2-app>
+    <app>Loading...</app>
   </body>
 </html>
